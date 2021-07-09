@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API - MARVEL</title>
   <link href="assets/bootstrap.min.css" rel="stylesheet">
@@ -36,13 +35,16 @@
     <img src="img/marvel.png" alt="" width="400" height="100"><br>
     <h1>ESCOLHA SEU PERSOGEM</h1>
     <div class="row">
-      <div class="col-4">
+      <div class="col-8">
         <label class="visually-hidden" for="inlineFormInputGroupUsername">Personagem</label>
         <div class="input-group">
           <div class="input-group-text">@</div>
           <input type="text" class="form-control" id="name" name="name" placeholder="Personagem">
         </div>
       </div>
+    </div>
+    <br>
+    <div class="row">
       <div class="col-4">
         <button class="btn btn-primary" id='pesquisa'>Pesquisar</button>
       </div>
