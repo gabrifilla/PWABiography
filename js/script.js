@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $("#pesquisa").click(function () {
-      alert("teste");
-      /*var publicKey = "8f4cc787a1653cab670c4231170dca1e";
+      var publicKey = "8f4cc787a1653cab670c4231170dca1e";
       var privateKey = "3bd9677e9831ed694c0200f2fc75fd68b797508a";
       var ts = Date.now();
       var hash = CryptoJS.MD5(ts + privateKey + publicKey);
@@ -24,6 +23,6 @@ $(document).ready(function () {
             $('.personagem').append(html);
           }
         }
-      });*/
+      });
     });
   });
