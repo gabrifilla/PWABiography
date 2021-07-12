@@ -8,11 +8,12 @@ self.addEventListener('install', function(event){
                 './index.html',
                 './manifest.webmanifest',
                 './index.js',
-                'assets/bootstrap.min.css',
-                'assets/bootstrap.bundle.min.js',
-                'assets/core.min.js',
-                'assets/md5.js',
-                'js/script.js'
+                '/assets/bootstrap.min.css',
+                '/assets/bootstrap.bundle.min.js',
+                '/assets/core.min.js',
+                '/assets/md5.js',
+                '/js/script.js',
+                '/img'
             ])
         })
     )
