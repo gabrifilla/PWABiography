@@ -1,5 +1,6 @@
-const cacheName = 'API-Marvel'
+const cacheName = 'biography-form'
 
+// Here is stored the files that you would want to be cached when navigating offline.
 self.addEventListener('install', function(event){
     event.waitUntil(
         caches.open(cacheName).then(function (cache){
@@ -8,12 +9,17 @@ self.addEventListener('install', function(event){
                 './index.html',
                 './manifest.webmanifest',
                 './index.js',
-                '/assets/bootstrap.min.css',
-                '/assets/bootstrap.bundle.min.js',
-                '/assets/core.min.js',
-                '/assets/md5.js',
-                '/js/script.js',
-                '/img'
+                './assets/bootstrap.min.css',
+                './assets/bootstrap.bundle.min.js',
+                './assets/sweetalert2.all.min.js',
+                './assets/sweetalert2.min.css',
+                './assets/datatables.min.css',
+                './assets/datatables.min.js',
+                './assets/core.min.js',
+                './assets/md5.js',
+                './js/script.js',
+                './img/biography-header.png',
+                './img/biography-header-icon.png',
             ])
         })
     )
@@ -49,7 +55,6 @@ async function networkAndCache(req){
         await cache.put(req, fresh.clone())
         return refresh
     } catch(e){
-        const cached = await cache.match(req);
-        return cached
+        return await cache.match(req);
     }
 }
